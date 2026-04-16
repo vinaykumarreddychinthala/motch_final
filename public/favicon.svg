@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Outer circle border -->
+  <circle cx="60" cy="60" r="56" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.6"/>
+  
+  <!-- Shield body -->
+  <path d="M60 20 L88 33 L88 60 C88 76 76 88 60 96 C44 88 32 76 32 60 L32 33 Z" 
+        fill="#0B2B1E" stroke="#C9A84C" stroke-width="1.5"/>
+  
+  <!-- Inner shield highlight -->
+  <path d="M60 28 L82 39 L82 60 C82 72.5 72.5 82 60 89 C47.5 82 38 72.5 38 60 L38 39 Z" 
+        fill="#163d28"/>
+  
+  <!-- Crown / Star of sovereignty -->
+  <g transform="translate(60, 55)">
+    <!-- Main star polygon -->
+    <polygon points="0,-18 4,-7 16,-7 7,0 11,12 0,5 -11,12 -7,0 -16,-7 -4,-7" 
+             fill="#C9A84C" opacity="0.9"/>
+    <!-- Inner star -->
+    <polygon points="0,-10 2,-4 9,-4 4,0 6,7 0,3 -6,7 -4,0 -9,-4 -2,-4" 
+             fill="#0B2B1E"/>
+  </g>
+  
+  <!-- Bottom arch text area hint -->
+  <path d="M36 76 Q60 86 84 76" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.4" fill="none"/>
+  
+  <!-- Small dots on circle -->
+  <circle cx="60" cy="4" r="2" fill="#C9A84C" opacity="0.7"/>
+  <circle cx="60" cy="116" r="2" fill="#C9A84C" opacity="0.7"/>
+  <circle cx="4" cy="60" r="2" fill="#C9A84C" opacity="0.7"/>
+  <circle cx="116" cy="60" r="2" fill="#C9A84C" opacity="0.7"/>
+</svg>

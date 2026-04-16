@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360" fill="none">
+  <!-- Shield background -->
+  <path d="M150 10 L280 60 L280 180 C280 260 220 320 150 350 C80 320 20 260 20 180 L20 60 Z"
+    fill="#0B2B1E" stroke="#C9A84C" stroke-width="4"/>
+  <!-- Inner shield border -->
+  <path d="M150 30 L262 74 L262 180 C262 252 208 308 150 334 C92 308 38 252 38 180 L38 74 Z"
+    fill="none" stroke="#C9A84C" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Omega / circle-arc (top arc) -->
+  <path d="M104 155 C104 116 126 92 150 92 C174 92 196 116 196 155" 
+    fill="none" stroke="#F5F0E8" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- A shape (triangle + crossbar) -->
+  <line x1="150" y1="95" x2="108" y2="210" stroke="#F5F0E8" stroke-width="14" stroke-linecap="round"/>
+  <line x1="150" y1="95" x2="192" y2="210" stroke="#F5F0E8" stroke-width="14" stroke-linecap="round"/>
+  <line x1="124" y1="173" x2="176" y2="173" stroke="#F5F0E8" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Feet of the A (serif-like) -->
+  <line x1="96" y1="210" x2="120" y2="210" stroke="#F5F0E8" stroke-width="10" stroke-linecap="round"/>
+  <line x1="180" y1="210" x2="204" y2="210" stroke="#F5F0E8" stroke-width="10" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,104 @@
+/* ===== FAQ SECTION ===== */
+.faq { position: relative; overflow: hidden; }
+
+.faq__bg {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent, var(--bg-secondary) 50%, transparent);
+  pointer-events: none;
+}
+
+/* Header — centered */
+.faq__header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.faq__header h2 { margin: 0; }
+
+/* Full-width accordion list */
+.faq__list {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Each accordion row */
+.faq__row {
+  border-bottom: 1px solid var(--border-subtle);
+  transition: var(--transition-fast);
+}
+
+/* Question button — full width, q on left, chevron on right */
+.faq__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition-fast);
+}
+
+.faq__question-text {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cream);
+  line-height: 1.4;
+  transition: color var(--transition-fast);
+}
+
+.faq__row--open .faq__question-text,
+.faq__question:hover .faq__question-text {
+  color: var(--gold-primary);
+}
+
+.faq__chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream-muted);
+  flex-shrink: 0;
+  transition: transform 0.3s ease, color 0.2s ease;
+}
+
+.faq__row--open .faq__chevron {
+  transform: rotate(180deg);
+  color: var(--gold-primary);
+}
+
+/* Collapsible answer */
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq__row--open .faq__answer {
+  max-height: 300px;
+}
+
+.faq__answer-inner {
+  padding: 0 4px 22px;
+  font-size: 0.92rem;
+  color: var(--cream-muted);
+  line-height: 1.85;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .faq__question { padding: 18px 2px; }
+  .faq__question-text { font-size: 0.93rem; }
+}
