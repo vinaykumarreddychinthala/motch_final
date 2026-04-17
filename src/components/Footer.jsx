@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation */}
-          <div className="footer__col">
+          {/* <div className="footer__col">
             <h4 className="footer__col-title">Navigation</h4>
             <ul className="footer__nav">
               {[['/', 'Home'], ['/services', 'Services'], ['/results', 'Results'], ['/about', 'About'], ['/contact', 'Book a Call']].map(([path, label]) => (
@@ -57,17 +57,17 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Services */}
-          <div className="footer__col">
+          {/* <div className="footer__col">
             <h4 className="footer__col-title">Services</h4>
             <ul className="footer__nav">
               {['DM Appointment Setting', 'Lead Qualification', 'Follow-Up Sequences', 'Setter Team Management', 'Pipeline Analytics'].map(s => (
                 <li key={s}><span className="footer__nav-static">{s}</span></li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div className="footer__col">

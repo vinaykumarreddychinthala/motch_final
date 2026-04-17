@@ -5,9 +5,9 @@ import './Navbar.css';
 
 const navLinks = [
   { path: '/',         label: 'Home' },
-  { path: '/services', label: 'Services' },
-  { path: '/results',  label: 'Results' },
-  { path: '/about',    label: 'About' },
+  // { path: '/services', label: 'Services' },
+  // { path: '/results',  label: 'Results' },
+  // { path: '/about',    label: 'About' },
 ];
 
 export default function Navbar() {
