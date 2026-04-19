@@ -80,16 +80,16 @@ export default function VSL() {
         <div className="vsl-hero__glow vsl-hero__glow--1" />
         <div className="vsl-hero__glow vsl-hero__glow--2" />
         <div className="vsl-container">
-          <div className="vsl-hero__label">LIVE IN-PERSON WORKSHOP &middot; LAS VEGAS</div>
+          {/* <div className="vsl-hero__label">LIVE IN-PERSON WORKSHOP &middot; LAS VEGAS</div> */}
           <h1 className="vsl-hero__heading">
             ARE YOU THE THING<br />
             <span className="vsl-gold">LIMITING YOUR BUSINESS?</span>
           </h1>
-          <p className="vsl-hero__sub">
+          {/* <p className="vsl-hero__sub">
             Join Our Scaling Workshop &mdash; Remove Yourself as the&nbsp;
             <span className="vsl-underline">Single Point of Failure</span>
             &nbsp;<ArrowRight size={14} className="vsl-hero__sub-arrow" />
-          </p>
+          </p> */}
 
           {/* Video Frame */}
           <div className="vsl-video-wrap">
@@ -108,27 +108,7 @@ export default function VSL() {
         </div>
       </section>
 
-      {/* 2. PAIN POINTS + CTA */}
-      <section className="vsl-section vsl-points">
-        <div className="vsl-container vsl-container--narrow">
-          <p className="vsl-points__intro">
-            It is a done-for-you appointment-setting service where you will receive{' '}
-            <strong>consistent, qualified calls</strong> from the team that has scaled
-            coaching businesses to $30K&ndash;$100K months and beyond.
-          </p>
-          <ul className="vsl-points__list">
-            {points.map((p, i) => (
-              <li key={i} className="vsl-points__item">
-                <span className="vsl-points__icon"><CheckCircle size={18} /></span>
-                <span>{p}</span>
-              </li>
-            ))}
-          </ul>
-          <button className="vsl-cta-btn" onClick={scrollToCal}>
-            I&apos;M READY TO SCALE
-          </button>
-        </div>
-      </section>
+    
 
       {/* 3. TESTIMONIALS */}
       <section className="vsl-section vsl-testimonials">
