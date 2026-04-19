@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { AtSign, Mail, MapPin, ArrowRight, Shield } from 'lucide-react';
+import { Mail, MapPin, ArrowRight, Shield } from 'lucide-react';
 import './Footer.css';
 
 export default function Footer() {
@@ -41,10 +41,6 @@ export default function Footer() {
             <p className="footer__tagline">
               Done-for-you Instagram DM appointment setting for elite fitness coaches. We fill your calendar so you can focus on changing lives.
             </p>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer__social">
-              <AtSign size={16} />
-              <span>@acquisitionsovereignty</span>
-            </a>
           </div>
 
           {/* Navigation */}
@@ -97,6 +93,14 @@ export default function Footer() {
           <div className="footer__links">
             <a href="#" className="footer__bottom-link">Privacy Policy</a>
             <a href="#" className="footer__bottom-link">Terms of Service</a>
+            <a
+              href="https://www.instagram.com/eman_nguyen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__bottom-link"
+            >
+              Instagram
+            </a>
           </div>
         </div>
       </div>
