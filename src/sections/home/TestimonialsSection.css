@@ -14,6 +14,7 @@
   position: relative;
   z-index: 1;
 }
+.testimonials__header .section-label { font-size: 1.6rem; }
 .testimonials__header h2 { margin-bottom: 16px; }
 .testimonials__sub {
   font-size: 1rem;

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import HeroSection from '../sections/home/HeroSection';
 import TrustBar from '../sections/home/TrustBar';
 import TestimonialsSection from '../sections/home/TestimonialsSection';
@@ -9,11 +11,27 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <TrustBar />
+      {/* <TrustBar /> */}
       <TestimonialsSection />
-      <ProcessSection />
+      <div className="learn-more-cta">
+        <div className="container">
+          <Link to="/vsl" className="btn-outline">
+            <span>Learn more</span>
+            <ArrowRight size={16} />
+          </Link>
+        </div>
+      </div>
+      {/* <ProcessSection /> */}
       <FaqSection />
-      <CtaSection />
+      <div className="learn-more-cta learn-more-cta--bottom">
+        <div className="container">
+          <Link to="/vsl" className="btn-outline">
+            <span>Learn more</span>
+            <ArrowRight size={16} />
+          </Link>
+        </div>
+      </div>
+      {/* <CtaSection /> */}
     </main>
   );
 }

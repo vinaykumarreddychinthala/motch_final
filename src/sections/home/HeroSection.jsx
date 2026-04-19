@@ -29,7 +29,7 @@ export default function HeroSection() {
             qualifications &amp; nurture. You take the calls and serve the clients.
           </p>
 
-          <ul className="hero__checks">
+          {/* <ul className="hero__checks">
             {[
               'No more chasing leads in your DMs',
               'Fully qualified prospects on every call',
@@ -40,7 +40,7 @@ export default function HeroSection() {
                 <span>{item}</span>
               </li>
             ))}
-          </ul>
+          </ul> */}
 
           <div className="hero__actions">
             <Link to="/vsl" className="btn-primary hero__learn-btn">

@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="footer__glow" />
       <div className="container">
         {/* Top CTA */}
-        <div className="footer__cta-bar">
+        {/* <div className="footer__cta-bar">
           <div className="footer__cta-content">
             <h2 className="footer__cta-heading">
               Ready to dominate your <span className="text-gold">calendar?</span>
@@ -23,7 +23,7 @@ export default function Footer() {
             <span>Book Your Free Call</span>
             <ArrowRight size={16} />
           </Link>
-        </div>
+        </div> */}
 
         <div className="footer__divider" />
 

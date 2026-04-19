@@ -22,7 +22,10 @@
   align-items: center;
 }
 
-.cr__header .section-label { margin-bottom: 16px; }
+.cr__header .section-label {
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
 .cr__header h2 { margin-bottom: 16px; }
 
 .cr__sub {

@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 import './Navbar.css';
 
 const navLinks = [
-  { path: '/',         label: 'Home' },
+  // { path: '/',         label: 'Home' },
   // { path: '/services', label: 'Services' },
   // { path: '/results',  label: 'Results' },
   // { path: '/about',    label: 'About' },
@@ -51,8 +51,8 @@ export default function Navbar() {
 
         {/* CTA */}
         <div className="navbar__cta">
-          <Link to="/contact" className="btn-primary">
-            <span>Book a Call</span>
+          <Link to="/vsl" className="btn-primary">
+            <span>Learn More</span>
           </Link>
         </div>
 

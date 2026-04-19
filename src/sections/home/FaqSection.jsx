@@ -43,7 +43,7 @@ export default function FaqSection() {
         {/* Header */}
         <div className="faq__header">
           <span className="section-label">FAQ</span>
-          <h2>Frequently Asked <span className="text-gold">Questions</span></h2>
+          {/* <h2>Frequently Asked <span className="text-gold">Questions</span></h2> */}
         </div>
 
         {/* Full-width accordion list */}

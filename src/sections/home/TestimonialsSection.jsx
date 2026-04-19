@@ -59,13 +59,13 @@ export default function TestimonialsSection() {
       <div className="container">
         <div className="testimonials__header">
           <span className="section-label" style={{ justifyContent: 'center' }}>Client Results</span>
-          <h2>
+          {/* <h2>
             Real Coaches.<br />
             <span className="text-gold">Real Revenue.</span>
           </h2>
           <p className="testimonials__sub">
             Don't take our word for it. Here's what fitness coaches say after partnering with Acquisition Sovereignty.
-          </p>
+          </p> */}
         </div>
 
         <div className="testimonials__grid">
