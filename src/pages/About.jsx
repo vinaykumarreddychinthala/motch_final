@@ -154,7 +154,7 @@ export default function About() {
           <h2>Ready to <span className="text-gold">Partner With Us?</span></h2>
           <p>Let's build your appointment system together. First call is completely free.</p>
           <Link to="/contact" className="btn-primary">
-            <span>Book a Free Strategy Call</span>
+            <span>Learn More</span>
             <ArrowRight size={17} />
           </Link>
         </div>

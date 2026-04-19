@@ -172,7 +172,7 @@ export default function Results() {
           <h2>Ready to Be the <span className="text-gold">Next Success Story?</span></h2>
           <p>Join the coaches already dominating their market with our system.</p>
           <Link to="/contact" className="btn-primary">
-            <span>Book a Free Strategy Call</span>
+            <span>Learn More</span>
             <ArrowRight size={17} />
           </Link>
         </div>

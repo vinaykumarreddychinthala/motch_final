@@ -156,7 +156,7 @@ export default function Services() {
                 That's why every package comes with a qualified call guarantee.
               </p>
               <Link to="/contact" className="btn-primary" style={{ marginTop: 24, display: 'inline-flex' }}>
-                <span>Book a Free Strategy Call</span>
+                <span>Learn More</span>
                 <ArrowRight size={16} />
               </Link>
             </div>

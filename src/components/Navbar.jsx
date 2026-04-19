@@ -81,7 +81,7 @@ export default function Navbar() {
           ))}
           <li>
             <Link to="/contact" className="btn-primary navbar__mobile-cta">
-              <span>Book a Free Strategy Call</span>
+              <span>Learn More</span>
             </Link>
           </li>
         </ul>
