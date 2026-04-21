@@ -51,25 +51,26 @@ const testimonials = [
 ];
 
 const services = [
-  { icon: TrendingUp, title: 'Outbound DM Setting',   desc: 'Our trained setters reach out to your ideal-fit audience daily across Instagram, qualifying every lead before they ever reach your calendar.' },
-  { icon: Users,      title: 'Inbound Lead Handling', desc: 'Every inbound enquiry from posts, stories, and reels is captured and qualified within minutes. No lead slips through the cracks.' },
-  { icon: Shield,     title: 'Lead Qualification',    desc: 'Budget, timeline, commitment, goal-fit. Every prospect is screened on four criteria before a call is booked. You only talk to real buyers.' },
-  { icon: Zap,        title: 'Nurture & Follow-Up',   desc: "Leads who are not ready yet get nurtured systematically until they are. Your pipeline compounds over time instead of going cold." },
+  { icon: TrendingUp, title: 'Outbound DM Setting', desc: 'Our trained setters reach out to your ideal-fit audience daily across Instagram, qualifying every lead before they ever reach your calendar.' },
+  { icon: Users, title: 'Inbound Lead Handling', desc: 'Every inbound enquiry from posts, stories, and reels is captured and qualified within minutes. No lead slips through the cracks.' },
+  { icon: Shield, title: 'Lead Qualification', desc: 'Budget, timeline, commitment, goal-fit. Every prospect is screened on four criteria before a call is booked. You only talk to real buyers.' },
+  { icon: Zap, title: 'Nurture & Follow-Up', desc: "Leads who are not ready yet get nurtured systematically until they are. Your pipeline compounds over time instead of going cold." },
 ];
 
 const faqs = [
-  { q: 'How quickly will I see results?',        a: 'Most clients receive their first booked calls within 7-10 days of onboarding. Setup takes 48-72 hours, then our setters begin outreach immediately.' },
-  { q: 'Do I need a large following?',           a: 'No. We work with coaches from 5K to 800K+ followers. What matters is your niche, offer clarity, and audience alignment, not raw follower count.' },
-  { q: 'How do you qualify leads?',              a: 'Every lead is screened on budget, timeline, commitment, and goal alignment. Unqualified prospects never reach your calendar.' },
-  { q: 'What if a call is unqualified?',         a: 'We replace it, guaranteed. If a lead does not meet agreed criteria, we book a replacement at no extra cost.' },
-  { q: 'Do you need access to my Instagram?',   a: 'We work via a sub-account or managed profile. We never need your main login, your brand and account stay fully protected.' },
-  { q: 'What does the service cost?',            a: 'We offer performance-based packages tailored to your coaching business. Pricing is revealed on the strategy call, clients report 5-10x ROI within the first month.' },
+  { q: 'How quickly will I see results?', a: 'Most clients receive their first booked calls within 7-10 days of onboarding. Setup takes 48-72 hours, then our setters begin outreach immediately.' },
+  { q: 'Do I need a large following?', a: 'No. We work with coaches from 5K to 800K+ followers. What matters is your niche, offer clarity, and audience alignment, not raw follower count.' },
+  { q: 'How do you qualify leads?', a: 'Every lead is screened on budget, timeline, commitment, and goal alignment. Unqualified prospects never reach your calendar.' },
+  { q: 'What if a call is unqualified?', a: 'We replace it, guaranteed. If a lead does not meet agreed criteria, we book a replacement at no extra cost.' },
+  { q: 'Do you need access to my Instagram?', a: 'We work via a sub-account or managed profile. We never need your main login, your brand and account stay fully protected.' },
+  { q: 'What does the service cost?', a: 'We offer performance-based packages tailored to your coaching business. Pricing is revealed on the strategy call, clients report 5-10x ROI within the first month.' },
 ];
 
 export default function VSL() {
   const [openFaq, setOpenFaq] = useState(null);
-  const calRef = useRef(null);
-  const scrollToCal = () => calRef.current?.scrollIntoView({ behavior: 'smooth' });
+  const handleBookingClick = () => {
+    window.open("https://api.leadconnectorhq.com/widget/booking/cMjMN4VVr1aIKsSABPiS", "_blank");
+  };
 
   return (
     <div className="vsl">
@@ -105,9 +106,9 @@ export default function VSL() {
               <div className="vsl-video-caption">you cannot take a vacation</div>
             </div>
           </div>
-          
+
           <div className="vsl-hero__actions">
-            <button className="vsl-cta-btn" onClick={scrollToCal}>
+            <button className="vsl-cta-btn" onClick={handleBookingClick}>
               <span>I'M READY TO SCALE</span>
               <ArrowRight size={18} />
             </button>
@@ -115,7 +116,7 @@ export default function VSL() {
         </div>
       </section>
 
-    
+
 
       {/* 3. TESTIMONIALS */}
       <section className="vsl-section vsl-testimonials">
@@ -145,13 +146,13 @@ export default function VSL() {
             ))}
           </div>
           <div className="vsl-hero__actions">
-            <button className="vsl-cta-btn" onClick={scrollToCal}>
+            <button className="vsl-cta-btn" onClick={handleBookingClick}>
               <span>I'M READY TO SCALE</span>
               <ArrowRight size={18} />
             </button>
           </div>
         </div>
-        
+
       </section>
 
       {/* 4. MINI STATEMENT */}
@@ -194,7 +195,7 @@ export default function VSL() {
       </section> */}
 
       {/* 6. CALENDAR BOOKING */}
-      <section className="vsl-section vsl-booking" ref={calRef}>
+      <section className="vsl-section vsl-booking">
         <div className="vsl-container vsl-container--narrow">
           <span className="vsl-label">Book Your Call</span>
           {/* <h2 className="vsl-section-heading">ACQ Scaling Strategy Meeting</h2>
@@ -222,14 +223,14 @@ export default function VSL() {
                 <span className="vsl-cal-nav">&#9654;</span>
               </div>
               <div className="vsl-cal-grid">
-                {['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(d => (
+                {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(d => (
                   <div key={d} className="vsl-cal-dow">{d}</div>
                 ))}
                 {[...Array(5)].map((_, i) => <div key={`e${i}`} className="vsl-cal-day vsl-cal-day--empty" />)}
                 {Array.from({ length: 30 }, (_, i) => i + 1).map(d => (
                   <div
                     key={d}
-                    className={`vsl-cal-day${d === 14 ? ' vsl-cal-day--selected' : ''}${[1,7,13,20,27].includes(d) ? ' vsl-cal-day--disabled' : ''}`}
+                    className={`vsl-cal-day${d === 14 ? ' vsl-cal-day--selected' : ''}${[1, 7, 13, 20, 27].includes(d) ? ' vsl-cal-day--disabled' : ''}`}
                   >
                     {d}
                   </div>
@@ -263,7 +264,7 @@ export default function VSL() {
           <div className="vsl-faq-footer">
             <p>Still have questions? Let&apos;s talk.</p>
             <div className="vsl-hero__actions">
-              <button className="vsl-cta-btn" onClick={scrollToCal}>
+              <button className="vsl-cta-btn" onClick={handleBookingClick}>
                 <span>I'M READY TO SCALE</span>
                 <ArrowRight size={18} />
               </button>

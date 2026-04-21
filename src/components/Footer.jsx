@@ -2,6 +2,25 @@ import { Link } from 'react-router-dom';
 import { Mail, MapPin, ArrowRight, Shield } from 'lucide-react';
 import './Footer.css';
 
+// Custom Instagram Icon SVG since it's missing in some lucide-react versions
+const InstagramIcon = ({ size = 24 }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -69,13 +88,23 @@ export default function Footer() {
           <div className="footer__col">
             <h4 className="footer__col-title">Contact</h4>
             <div className="footer__contact-list">
-              <a href="mailto:hello@acquisitionsovereignty.com" className="footer__contact-item">
-                <Mail size={15} />
-                <span>hello@acquisitionsovereignty.com</span>
-              </a>
               <div className="footer__contact-item">
                 <MapPin size={15} />
                 <span>Serving coaches globally.</span>
+              </div>
+              <div className="footer__socials" style={{ marginTop: '4px' }}>
+                <a href="mailto:emannguyenai@gmail.com" className="footer__social-icon" aria-label="Email">
+                  <Mail size={18} />
+                </a>
+                <a
+                  href="https://www.instagram.com/eman_nguyen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer__social-icon"
+                  aria-label="Instagram"
+                >
+                  <InstagramIcon size={18} />
+                </a>
               </div>
               {/* <div className="footer__badge">
                 <Shield size={14} />
@@ -93,14 +122,6 @@ export default function Footer() {
           <div className="footer__links">
             <a href="#" className="footer__bottom-link">Privacy Policy</a>
             <a href="#" className="footer__bottom-link">Terms of Service</a>
-            <a
-              href="https://www.instagram.com/eman_nguyen"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footer__bottom-link"
-            >
-              Instagram
-            </a>
           </div>
         </div>
       </div>
