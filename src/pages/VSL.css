@@ -54,7 +54,7 @@
   font-weight: 700;
   line-height: 1.1;
   color: var(--cream);
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   letter-spacing: -0.025em;
 }
 
@@ -140,6 +140,16 @@
 
 .vsl-hero__sub-arrow { flex-shrink: 0; color: var(--gold-primary); }
 
+.vsl-hero__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 48px;
+  position: relative;
+  z-index: 10;
+}
+
 /* Video frame */
 .vsl-video-wrap {
   position: relative;
@@ -154,7 +164,7 @@
   border: 2px solid var(--border);
   border-radius: var(--radius-md);
   overflow: hidden;
-  aspect-ratio: 16/9;
+  aspect-ratio: 4/3;
   cursor: pointer;
   box-shadow: 0 32px 80px rgba(0,0,0,0.7), var(--shadow-gold);
   transition: border-color var(--transition-fast);
@@ -286,13 +296,13 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 18px 48px;
+  padding: 15px 34px;
   background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
   color: #0a1500;
   font-family: var(--font-body);
-  font-size: 0.95rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   border: 1px solid rgba(201,168,76,0.6);
   border-radius: var(--radius-sm);
@@ -501,6 +511,12 @@
   text-align: center;
 }
 
+.vsl-booking .vsl-label {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 32px;
+}
+
 .vsl-booking__sub {
   font-size: 0.95rem;
   color: var(--cream-muted);
@@ -675,8 +691,7 @@
 }
 
 .vsl-faq-q {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--cream);
   line-height: 1.4;
@@ -705,9 +720,9 @@
 
 .vsl-faq-answer-inner {
   padding: 0 0 24px;
-  font-size: 0.92rem;
-  color: var(--cream-muted);
-  line-height: 1.85;
+  font-size: 1.05rem;
+  color: var(--cream);
+  line-height: 1.8;
 }
 
 .vsl-faq-footer {
@@ -730,9 +745,14 @@
 }
 
 @media (max-width: 600px) {
-  .vsl-hero__heading { font-size: clamp(2rem, 9vw, 2.8rem); }
-  .vsl-section { padding: 72px 0; }
-  .vsl-cta-btn { width: 100%; padding: 16px 24px; }
-  .vsl-container { padding: 0 20px; }
+  .vsl-hero { padding: 80px 0 40px; min-height: auto; }
+  .vsl-hero__heading { font-size: clamp(2.2rem, 10vw, 3.2rem); margin-bottom: 20px; }
+  .vsl-section { padding: 48px 0; }
+  .vsl-cta-btn { width: 100%; padding: 13px 26px; font-size: 0.84rem; }
+  .vsl-container { padding: 0 18px; }
   .vsl-cal-name-row { flex-direction: column; }
+  .vsl-faq-q { font-size: 1.15rem; }
+  .vsl-hero__actions { margin-top: 32px; }
+  .vsl-section-heading { margin-bottom: 28px; }
+  .vsl-tcard { padding: 20px; }
 }

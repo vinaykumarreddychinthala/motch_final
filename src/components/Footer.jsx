@@ -75,12 +75,12 @@ export default function Footer() {
               </a>
               <div className="footer__contact-item">
                 <MapPin size={15} />
-                <span>Serving coaches globally, remotely.</span>
+                <span>Serving coaches globally.</span>
               </div>
-              <div className="footer__badge">
+              {/* <div className="footer__badge">
                 <Shield size={14} />
                 <span>Proven System · Real Results</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

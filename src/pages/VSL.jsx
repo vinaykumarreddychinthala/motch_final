@@ -105,6 +105,13 @@ export default function VSL() {
               <div className="vsl-video-caption">you cannot take a vacation</div>
             </div>
           </div>
+          
+          <div className="vsl-hero__actions">
+            <button className="vsl-cta-btn" onClick={scrollToCal}>
+              <span>I'M READY TO SCALE</span>
+              <ArrowRight size={18} />
+            </button>
+          </div>
         </div>
       </section>
 
@@ -137,11 +144,18 @@ export default function VSL() {
               </div>
             ))}
           </div>
+          <div className="vsl-hero__actions">
+            <button className="vsl-cta-btn" onClick={scrollToCal}>
+              <span>I'M READY TO SCALE</span>
+              <ArrowRight size={18} />
+            </button>
+          </div>
         </div>
+        
       </section>
 
       {/* 4. MINI STATEMENT */}
-      <section className="vsl-statement">
+      {/* <section className="vsl-statement">
         <div className="vsl-container vsl-container--narrow">
           <p className="vsl-statement__text">
             Stop grinding DMs. Stop chasing leads. Stop leaving money on the table.
@@ -150,10 +164,10 @@ export default function VSL() {
             Your only job is to show up, present your offer, and close the deal.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* 5. SERVICES OVERVIEW */}
-      <section className="vsl-section vsl-services">
+      {/* <section className="vsl-section vsl-services">
         <div className="vsl-container">
           <span className="vsl-label">How It Works</span>
           <h2 className="vsl-section-heading">
@@ -177,17 +191,17 @@ export default function VSL() {
             I&apos;M READY TO SCALE
           </button>
         </div>
-      </section>
+      </section> */}
 
       {/* 6. CALENDAR BOOKING */}
       <section className="vsl-section vsl-booking" ref={calRef}>
         <div className="vsl-container vsl-container--narrow">
           <span className="vsl-label">Book Your Call</span>
-          <h2 className="vsl-section-heading">ACQ Scaling Strategy Meeting</h2>
+          {/* <h2 className="vsl-section-heading">ACQ Scaling Strategy Meeting</h2>
           <p className="vsl-booking__sub">
             Excited to speak with you.{' '}
             <span className="vsl-underline">Find out if you are a fit</span> &rarr;
-          </p>
+          </p> */}
           <div className="vsl-cal-card">
             <div className="vsl-cal-form">
               <input className="vsl-cal-input" type="tel" placeholder="Phone number *" />
@@ -248,9 +262,12 @@ export default function VSL() {
           </div>
           <div className="vsl-faq-footer">
             <p>Still have questions? Let&apos;s talk.</p>
-            <Link to="/contact" className="vsl-cta-btn vsl-cta-btn--outline">
-              Book a Free Call <ArrowRight size={15} />
-            </Link>
+            <div className="vsl-hero__actions">
+              <button className="vsl-cta-btn" onClick={scrollToCal}>
+                <span>I'M READY TO SCALE</span>
+                <ArrowRight size={18} />
+              </button>
+            </div>
           </div>
         </div>
       </section>

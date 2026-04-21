@@ -14,23 +14,24 @@ export default function Home() {
       {/* <TrustBar /> */}
       <TestimonialsSection />
       <div className="learn-more-cta">
-        <div className="container">
-          <Link to="/vsl" className="btn-outline">
-            <span>Learn more</span>
+        <div className="hero__actions">
+          <Link to="/vsl" className="btn-primary hero__learn-btn">
+            <span>Learn More</span>
             <ArrowRight size={16} />
           </Link>
         </div>
       </div>
       {/* <ProcessSection /> */}
       <FaqSection />
-      <div className="learn-more-cta learn-more-cta--bottom">
-        <div className="container">
-          <Link to="/vsl" className="btn-outline">
-            <span>Learn more</span>
+      <div className="learn-more-cta">
+        <div className="hero__actions">
+          <Link to="/vsl" className="btn-primary hero__learn-btn">
+            <span>Learn More</span>
             <ArrowRight size={16} />
           </Link>
         </div>
       </div>
+
       {/* <CtaSection /> */}
     </main>
   );

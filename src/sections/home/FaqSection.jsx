@@ -41,10 +41,9 @@ export default function FaqSection() {
       <div className="faq__bg" />
       <div className="container">
         {/* Header */}
-        <div className="faq__header">
-          <span className="section-label">FAQ</span>
-          {/* <h2>Frequently Asked <span className="text-gold">Questions</span></h2> */}
-        </div>
+        <h2 className="vsl-faq-heading">
+          Frequently Asked <span className="vsl-gold">Questions</span>
+        </h2>
 
         {/* Full-width accordion list */}
         <div className="faq__list">

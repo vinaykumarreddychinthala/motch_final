@@ -129,17 +129,17 @@ button {
   padding: 0 28px;
 }
 
-.section-pad { padding: 110px 0; }
+.section-pad { padding: 80px 0; }
 
 .learn-more-cta {
   position: relative;
   z-index: 1;
   display: flex;
   justify-content: center;
-  padding: 32px 0 48px;
+  padding: 20px 0 32px;
 }
 .learn-more-cta--bottom {
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 
 /* ═══════════════════════════════════════
@@ -509,7 +509,7 @@ textarea.form-input {
    RESPONSIVE
 ═══════════════════════════════════════ */
 @media (max-width: 768px) {
-  .section-pad { padding: 76px 0; }
+  .section-pad { padding: 50px 0; }
   .container   { padding: 0 18px; }
   .btn-primary, .btn-outline { padding: 13px 26px; font-size: 0.84rem; }
   h1 { font-size: clamp(2.4rem, 9vw, 3.4rem); }
@@ -517,5 +517,5 @@ textarea.form-input {
 }
 
 @media (max-width: 480px) {
-  .section-pad { padding: 60px 0; }
+  .section-pad { padding: 35px 0; }
 }

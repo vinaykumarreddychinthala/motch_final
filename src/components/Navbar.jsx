@@ -80,7 +80,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <Link to="/contact" className="btn-primary navbar__mobile-cta">
+            <Link to="/vsl" className="btn-primary navbar__mobile-cta">
               <span>Learn More</span>
             </Link>
           </li>
