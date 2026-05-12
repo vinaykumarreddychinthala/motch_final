@@ -180,7 +180,7 @@
   border: 2px solid var(--border);
   border-radius: var(--radius-md);
   overflow: hidden;
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/9;
   cursor: pointer;
   box-shadow: 0 32px 80px rgba(0, 0, 0, 0.7), var(--shadow-gold);
   transition: border-color var(--transition-fast);

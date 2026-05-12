@@ -95,15 +95,18 @@ export default function VSL() {
           {/* Video Frame */}
           <div className="vsl-video-wrap">
             <div className="vsl-video-frame">
-              <div className="vsl-video-inner">
-                <div className="vsl-video-text">VIDEO</div>
-                <button className="vsl-play-btn" aria-label="Play video">
-                  <Play size={28} fill="white" />
-                </button>
-              </div>
-              <div className="vsl-video-logo vsl-video-logo--left">&#10022;&#10022;</div>
-              <div className="vsl-video-logo vsl-video-logo--right">&#10022;&#10022;</div>
-              <div className="vsl-video-caption">you cannot take a vacation</div>
+              <iframe
+                src="https://fast.wistia.net/embed/iframe/y6sklxd59u?seo=true&videoFoam=true"
+                allow="autoplay; fullscreen"
+                allowTransparency="true"
+                frameBorder="0"
+                scrolling="no"
+                className="wistia_embed"
+                name="wistia_embed"
+                width="100%"
+                height="100%"
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+              ></iframe>
             </div>
           </div>
 
