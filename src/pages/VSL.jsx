@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Play, ChevronDown, CheckCircle, Star, ArrowRight, Users, TrendingUp, Shield, Zap } from 'lucide-react';
 import './VSL.css';
@@ -72,6 +72,33 @@ export default function VSL() {
     window.open("https://api.leadconnectorhq.com/widget/booking/cMjMN4VVr1aIKsSABPiS", "_blank");
   };
 
+  useEffect(() => {
+    const embedId = 'vidalytics_embed_cz00HC5C_gYddmNh';
+    const container = document.getElementById(embedId);
+    if (!container) return;
+
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.innerHTML = `
+      (function (v, i, d, a, l, y, t, c, s) {
+          y='_'+d.toLowerCase();c=d+'L';if(!v[d]){v[d]={};}if(!v[c]){v[c]={};}if(!v[y]){v[y]={};}var vl='Loader',vli=v[y][vl],vsl=v[c][vl + 'Script'],vlf=v[c][vl + 'Loaded'],ve='Embed';
+          if (!vsl){vsl=function(u,cb){
+              if(t){cb();return;}s=i.createElement("script");s.type="text/javascript";s.async=1;s.src=u;
+              if(s.readyState){s.onreadystatechange=function(){if(s.readyState==="loaded"||s.readyState=="complete"){s.onreadystatechange=null;vlf=1;cb();}};}else{s.onload=function(){vlf=1;cb();};}
+              i.getElementsByTagName("head")[0].appendChild(s);
+          };}
+          vsl(l+'loader.min.js?playerId=5&hash=2026-05-13+04%3A42%3A31',function(){if(!vli){var vlc=v[c][vl];vli=new vlc();}vli.loadScript('https://fast.vidalytics.com/player/loader.min.js',function(){var vec=v[d][ve];t=new vec();t.run(a);});});
+      })(window, document, 'Vidalytics', 'vidalytics_embed_cz00HC5C_gYddmNh', 'https://fast.vidalytics.com/embeds/xxm7lyKh/cz00HC5C_gYddmNh/');
+    `;
+    container.appendChild(script);
+
+    return () => {
+      if (container) {
+        container.innerHTML = '';
+      }
+    };
+  }, []);
+
   return (
     <div className="vsl">
 
@@ -95,18 +122,10 @@ export default function VSL() {
           {/* Video Frame */}
           <div className="vsl-video-wrap">
             <div className="vsl-video-frame">
-              <iframe
-                src="https://fast.wistia.net/embed/iframe/y6sklxd59u?seo=true&videoFoam=true"
-                allow="autoplay; fullscreen"
-                allowTransparency="true"
-                frameBorder="0"
-                scrolling="no"
-                className="wistia_embed"
-                name="wistia_embed"
-                width="100%"
-                height="100%"
+              <div
+                id="vidalytics_embed_cz00HC5C_gYddmNh"
                 style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-              ></iframe>
+              ></div>
             </div>
           </div>
 
